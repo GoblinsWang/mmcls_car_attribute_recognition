@@ -1,3 +1,5 @@
+from datasets.cars_list import CarsList
+
 _base_ = [
     './_base_/models/resnet50.py',
     './_base_/datasets/cifar10_bs16.py', './_base_/default_runtime.py'
