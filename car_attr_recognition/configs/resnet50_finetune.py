@@ -1,6 +1,8 @@
+import sys
+sys.path.append("../../configs/")
 _base_ = [
-    '../_base_/models/resnet50.py',
-    '../_base_/datasets/cifar10_bs16.py', '../_base_/default_runtime.py'
+    './_base_/models/resnet50.py',
+    './_base_/datasets/cifar10_bs16.py', './_base_/default_runtime.py'
 ]
 
 # 模型设置
