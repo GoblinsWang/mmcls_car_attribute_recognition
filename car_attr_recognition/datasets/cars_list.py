@@ -1,7 +1,9 @@
-import numpy
 import mmcv
+import numpy as np
+from mmcls.datasets import DATASETS
 from mmcls.datasets import MultiLabelDataset
 
+@DATASETS.register_module()
 class CarsList(MultiLabelDataset):
     def load_annotations(self):
         """Load image paths and gt_labels."""
