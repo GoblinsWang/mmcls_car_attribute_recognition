@@ -1,9 +1,11 @@
-import sys
-sys.path.append("../../configs/")
 _base_ = [
-    '../../configs/_base_/models/resnet50.py',
-    '../../configs/_base_/datasets/cifar10_bs16.py', '../../configs/_base_/default_runtime.py'
+    './_base_/models/resnet50.py',
+    './_base_/datasets/cifar10_bs16.py', './_base_/default_runtime.py'
 ]
+# 添加自定义类
+custom_imports = dict(
+    imports=['CarsList'],
+    allow_failed_imports=False)
 
 # 模型设置
 model = dict(
