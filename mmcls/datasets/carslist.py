@@ -6,8 +6,8 @@ from .base_dataset import BaseDataset
 
 @DATASETS.register_module()
 class CarsList(BaseDataset):
-    # CLASSES = ['sedan', 'suv', 'van', 'hatchback', 'mpv', 'pickup', 'bus', 'truck', 'estate']
-    CLASSES = ['yellow', 'orange', 'green', 'gray', 'red', 'blue', 'white', 'golden', 'brown', 'black']
+    CLASSES = ['sedan', 'suv', 'van', 'hatchback', 'mpv', 'pickup', 'bus', 'truck', 'estate']
+    # CLASSES = ['yellow', 'orange', 'green', 'gray', 'red', 'blue', 'white', 'golden', 'brown', 'black']
     def load_annotations(self):
         assert isinstance(self.ann_file, str)
 

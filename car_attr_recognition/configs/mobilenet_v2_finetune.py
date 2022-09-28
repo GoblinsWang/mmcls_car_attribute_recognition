@@ -49,7 +49,7 @@ test_pipeline = [
 
 #classes = ['sedan', 'suv', 'van', 'hatchback', 'mpv', 'pickup', 'bus', 'truck', 'estate']
 data = dict(
-    samples_per_gpu=32,
+    samples_per_gpu=128,
     workers_per_gpu=2,
     train=dict(
         type=dataset_type,
